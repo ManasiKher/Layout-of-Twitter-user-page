@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="daynine.com.lrm.kotlinday9.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rl_contents"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tb_pager"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingEnd="30dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="0.3"
+            android:textColor="#000000"
+            android:text="@string/tab1"
+            android:textSize="11sp"
+            android:id="@+id/btn_tab1"
+            android:layout_height="34dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="0.3"
+            android:textColor="#000000"
+            android:text="@string/tab2"
+            android:textSize="11sp"
+            android:id="@+id/btn_tab2"
+            android:layout_height="34dp"  />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="0.3"
+            android:textColor="#000000"
+            android:text="@string/tab3"
+            android:textSize="11sp"
+            android:id="@+id/btn_tab3"
+            android:layout_height="34dp" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/vp_content"
+        android:layout_below="@+id/tb_pager"
+        android:layout_height="350dp"/>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+<!-- <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_margin="@dimen/text_margin"
+
+       android:text="@string/large_text" />-->
+
